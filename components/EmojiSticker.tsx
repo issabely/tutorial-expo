@@ -58,4 +58,4 @@ export default function EmojiSticker({ imageSize, stickerSource }: Props) {
             </Animated.View>
         </GestureDetector>
     );
-}
+};
