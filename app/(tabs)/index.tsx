@@ -57,7 +57,7 @@ export default function Index() {
   };
 
   const onSaveImageAsync = async () => {
-    if (Platform.OS !== 'Web') {
+    if (Platform.OS !== 'web') {
       try {
         const localUri = await captureRef(imageRef, {
           height: 440,
@@ -82,7 +82,7 @@ export default function Index() {
         let link = document.createElement('a');
         link.download = 'sticker-smash.jpeg';
         link.href = dataUrl;
-        link.Click();
+        link.click();
       } catch (e) {
         console.log(e);
       }
